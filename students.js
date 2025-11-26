@@ -18,29 +18,30 @@ function loadData() {
         students = JSON.parse(savedStudents);
     } else {
         // Sample data
-        students = [
-            {
-                id: 1,
-                name: 'Aditya Kumar Sharma',
-                email: 'Aditya@gmail.com',
-                section: 'Computer Science',
-                enrollmentDate: '2024-01-15'
-            },
-            {
-                id: 2,
-                name: 'Shreshti Mittal',
-                email: 'Shreshti@gmail.com',
-                section: 'Mathematics',
-                enrollmentDate: '2024-01-20'
-            },
-            {
-                id: 3,
-                name: 'Anirudh Singh',
-                email: 'Anirudh@gmail.com',
-                section: 'Physics',
-                enrollmentDate: '2024-02-01'
-            }
-        ];
+       const students = [
+  {
+    id: 1,
+    name: 'Rahul Verma',
+    email: 'rahul.verma@example.com',
+    section: 'Electronics',
+    enrollmentDate: '2024-03-10'
+  },
+  {
+    id: 2,
+    name: 'Priya Sharma',
+    email: 'priya.sharma@example.com',
+    section: 'Biology',
+    enrollmentDate: '2024-03-15'
+  },
+  {
+    id: 3,
+    name: 'Karan Singh',
+    email: 'karan.singh@example.com',
+    section: 'Mechanical',
+    enrollmentDate: '2024-03-20'
+  }
+];
+
         saveData();
     }
 }
