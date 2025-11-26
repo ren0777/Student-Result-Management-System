@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     renderTable();
 });
 
-// Load data from localStorage
+
 function loadData() {
     const savedSections = localStorage.getItem('sections');
     if (savedSections) {
@@ -42,24 +42,23 @@ function loadData() {
         saveData();
     }
 
-    // Load students to calculate total
+  
     const savedStudents = localStorage.getItem('students');
     if (savedStudents) {
         students = JSON.parse(savedStudents);
     }
 }
 
-// Save data to localStorage
+
 function saveData() {
     localStorage.setItem('sections', JSON.stringify(sections));
 }
 
-// Calculate total students per section
+
 function getTotalStudents(sectionName) {
     return students.filter(student => student.section === sectionName).length;
 }
 
-// Render table
 function renderTable() {
     const tbody = document.getElementById('tableBody');
     
@@ -83,7 +82,7 @@ function renderTable() {
     `).join('');
 }
 
-// Open modal
+
 function openModal() {
     editingId = null;
     document.getElementById('modalTitle').textContent = 'Add New Section';
@@ -92,7 +91,7 @@ function openModal() {
     document.getElementById('sectionModal').classList.add('show');
 }
 
-// Close modal
+
 function closeModal() {
     document.getElementById('sectionModal').classList.remove('show');
     document.getElementById('sectionForm').reset();
