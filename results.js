@@ -1,4 +1,4 @@
-// Results data storage
+
 let results = [];
 let students = [];
 let editingId = null;
@@ -12,45 +12,45 @@ document.addEventListener('DOMContentLoaded', function() {
     applyFilters();
 });
 
-// Load data from localStorage
+
 function loadData() {
     const savedResults = localStorage.getItem('results');
     if (savedResults) {
         results = JSON.parse(savedResults);
     } else {
-        // Sample data
+        
         results = [
             {
                 id: 1,
-                studentName: 'John Doe',
+                studentName: 'faizan',
                 subject: 'Mathematics',
                 marks: 95,
                 examDate: '2024-03-15'
             },
             {
                 id: 2,
-                studentName: 'Jane Smith',
+                studentName: 'luffy,
                 subject: 'Physics',
                 marks: 88,
                 examDate: '2024-03-16'
             },
             {
                 id: 3,
-                studentName: 'Mike Johnson',
+                studentName: 'zoro',
                 subject: 'Chemistry',
                 marks: 76,
                 examDate: '2024-03-17'
             },
             {
                 id: 4,
-                studentName: 'John Doe',
+                studentName: 'roger',
                 subject: 'Physics',
                 marks: 82,
                 examDate: '2024-03-18'
             },
             {
                 id: 5,
-                studentName: 'Jane Smith',
+                studentName: 'black beard',
                 subject: 'Mathematics',
                 marks: 92,
                 examDate: '2024-03-19'
