@@ -60,7 +60,7 @@ body {
     padding: 28px;
 }
 
-/* Header */
+
 .header {
     background: var(--card-bg);
     padding: 22px 28px;
@@ -78,7 +78,7 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* Tab Navigation */
+
 .tab-navigation {
     display: flex;
     gap: 8px;
@@ -107,7 +107,7 @@ body {
     box-shadow: var(--soft-shadow);
 }
 
-/* Section Header */
+
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -121,7 +121,7 @@ body {
     color: #111827;
 }
 
-/* Buttons */
+
 .btn {
     padding: 10px 20px;
     border: none;
@@ -164,7 +164,6 @@ body {
     line-height: 1;
 }
 
-/* Table */
 .table-container {
     background: rgba(255,255,255,0.88);
     border-radius: 14px;
